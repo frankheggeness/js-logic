@@ -65,8 +65,12 @@ console.log(login('test1234'));
  * The function will return true if the first number is greater than the second.
  * Console.log your result.
 */
-
-
+function isGreaterThan(first, second){
+  if(first > second){
+    return true
+  }
+}
+console.log(isGreaterThan(2,1));
 
 /*
  * #4
