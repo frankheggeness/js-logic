@@ -120,8 +120,14 @@ console.log(bigBird('bir'))
  * If the strings are equal, the function will return the message "You look mahvelous!" Otherwise, return the message: "I don't know who you are anymore." 
  * Console.log your result.
 */
-
-
+function isEqual(first, second){
+  if (first.length === second.length){
+    return 'You look mahvelous!'
+  }else{
+    return "I dont' know who you are anymore"
+  }
+}
+console.log(isEqual('hello', 'hiyyo'))
 /*
  * #7
  * Function - notEqual
