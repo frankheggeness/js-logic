@@ -385,8 +385,17 @@ for (var i = 0; i<myFavFoods.length; i++){
  * The function will loop through and add up all the values in the array that is passed into the function and return the total.
  * Console.log your result.
 */
+var numArray = [1, 6, 213, 33, 13]
 
-
+function sumItUp(arr){
+  var total = 0
+  for (var i = 0; i < arr.length; i ++){
+    console.log(arr[i])
+total += arr[i];
+  }
+  return total;
+}
+console.log(sumItUp(numArray));
 
 /*
  * #18
@@ -401,6 +410,21 @@ for (var i = 0; i<myFavFoods.length; i++){
 */ 
 
 var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
+var east = []
+var west = []
+function allStars(ballers){
+  for (var i = 0; i < ballers.length; i ++){
+    console.log(ballers[i]);
+    if (i % 2 === 0){
+      east.push(ballers[i]);
+    }else{
+      west.push(ballers[i]);
+    }
+  }
+}
+allStars(players);
+console.log(east);
+console.log(west)
 /*
  * #19
  * Function - subways
@@ -414,8 +438,17 @@ var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Si
 */ 
 
   var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
-
-
+function subways(special){
+  for (var i = 0; i<special.length; i ++){
+    if(i % 2 === 1){
+      special.splice(i, 1, 'Classic Tuna');
+      special[i] = 'Classic Tuna';
+    }
+  }
+  return special;
+}
+subways(subOftheDay);
+console.log(subOftheDay);
 /*
 Final Boss
  * #20
