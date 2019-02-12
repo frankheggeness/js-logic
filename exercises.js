@@ -367,7 +367,9 @@ for (var i = 0; i<players.length; i++){
  * Create a for loop that will iterate and console.log each item in the array below:
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
-
+for (var i = 0; i<myFavFoods.length; i++){
+  console.log(myFavFoods[i])
+}
 
 /*
  * #17
